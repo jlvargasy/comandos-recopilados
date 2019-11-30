@@ -1,0 +1,16 @@
+remove configuracion java
+sudo alternatives --remove [java] /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.fc30.x86_64/bin/[java]
+
+set java config 
+alternatives --set javaws /usr/bin/javaws
+
+Config JDK jar, javaws, javac, java
+sudo alternatives --install /usr/bin/jar jar /usr/java/jdk1.8.0_231-amd64/jre/bin/jar 200000
+
+
+Listar configuracines java
+sudo update-alternatives --config java
+
+Ubicacion de librerias java
+/usr/lib/jvm
+
